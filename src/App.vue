@@ -1,6 +1,9 @@
 <template>
   <div id="app">
 <h1>Todos</h1>
+<h3>Completed:</h3>
+<h3>Pending:</h3>
+
 <todos-list/>
 <todo-form/>
   </div>

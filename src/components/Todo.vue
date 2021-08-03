@@ -16,6 +16,9 @@ export default {
 		deleteTodo() {
 			this.$store.dispatch("deleteTodo",this.todo)
 		},
+				toggleTodoStatus() {
+			this.$store.dispatch("toggleTodoStatus",this.todo)
+		},
 		
 	}
 }
