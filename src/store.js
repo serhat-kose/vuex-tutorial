@@ -34,6 +34,9 @@ export default new Vuex.Store({
 			let index = state.todos.indexOf(todoItem);
 			state.todos.splice(index,1)
 		},
+		TOGGLE_TODO(state,todoItem){
+			todoItem.completed=!todoItem.completed
+		},
 
 	},
 	actions: {
@@ -42,6 +45,9 @@ export default new Vuex.Store({
 		},
 		deleteTodo({commit},todoItem){
 			commit('DELETE_TODO',todoItem)
+		},
+		toggleTodoStatus({commit},todoItem){
+			commit('TOGGLE_TODO',todoItem)
 		}
 	}
 
