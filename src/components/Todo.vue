@@ -2,7 +2,7 @@
 	<div style="width:250px; margin:5px auto;">
 		<div style="display:flex; justify-content:space-between"> 
 		<span :class="{completed: todo.completed}" @click="toggleTodoStatus(todo)">{{todo.title}}</span>
-		<button type="primary" @click="deleteTodo(todo)">Delete</button>
+		<b-button variant="primary" @click="deleteTodo(todo)">Delete</b-button>
 		</div>
 
 	</div>
@@ -20,8 +20,6 @@ export default {
 			toggleTodoStatus: 'toggleTodoStatus'
 		})
 
-
-		
 	}
 }
 </script>
