@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<br>
 		<input type="text" v-model="newTodoItem" />
 		<button @click="addNewTodoItem()">Submit</button>
 	</div>
